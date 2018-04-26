@@ -1,0 +1,27 @@
+# Configuration file for Gammu SMS Daemon
+
+# Gammu library configuration, see gammurc(5)
+[gammu]
+port = /dev/ttyUSB0
+connection = at
+# Debugging
+logformat = textalldate
+logfile = /var/log/gammu
+gammucoding = utf8
+
+# SMSD configuration, see gammu-smsdrc(5)
+[smsd]
+pin = 3975
+service = files
+logfile = syslog
+# Increase for debugging information
+debuglevel = 0
+
+# Paths where messages are stored
+inboxpath = /var/spool/gammu/inbox/
+outboxpath = /var/spool/gammu/outbox/
+sentsmspath = /var/spool/gammu/sent/
+errorsmspath = /var/spool/gammu/error/
+
+RunOnReceive = python /home/pi/sms/receive.py
+

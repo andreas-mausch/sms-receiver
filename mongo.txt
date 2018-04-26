@@ -1,0 +1,1 @@
+mongo "mongodb+srv://sms:9La3WJ0UICiIY2pQ@cluster0-0hvw0.mongodb.net/test"
