@@ -44,6 +44,11 @@ python website.py
 
 to start the flask server. Then navigate to it via a browser to see the received SMS.
 
+# Security
+
+This started as a local git repo, that's why you find passwords in the git history for the mongo connection string.  
+I am aware of this and have changed them. ;)
+
 # Debug
 
 ```bash

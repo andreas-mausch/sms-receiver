@@ -5,7 +5,7 @@ from pymongo import MongoClient
 from datetime import datetime
 
 def main():
-    mongo = MongoClient('mongodb+srv://sms:9La3WJ0UICiIY2pQ@cluster0-0hvw0.mongodb.net/sms')
+    mongo = MongoClient('mongodb+srv://sms:password@cluster0-0hvw0.mongodb.net/sms')
     database = mongo.get_default_database()
     messages = database.messages
 
