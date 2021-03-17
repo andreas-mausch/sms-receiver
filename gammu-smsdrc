@@ -24,4 +24,3 @@ sentsmspath = /var/spool/gammu/sent/
 errorsmspath = /var/spool/gammu/error/
 
 RunOnReceive = python /home/pi/sms/receive.py
-
